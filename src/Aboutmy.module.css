@@ -1,0 +1,113 @@
+.navbar {
+  padding-top: 50px;
+  text-align: center;
+}
+.one{
+  background-image: url(../src/images/ss2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.one h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  color: white;
+}
+.one h1:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: #b80000;
+}
+.one h1:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
+}
+
+.navbar {
+  padding-top: 50px;
+  text-align: center;
+}
+.navbar h1 {
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+
+/** button group styles **/
+.btngroup {
+  border-radius: 1rem;
+  text-transform: capitalize;
+}
+.hello{
+  background-color: #b80000;
+}
+.btngroup__item {
+  border: none;
+
+  /* min-width: 6rem; */
+  padding: 1.5rem 3rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0;
+  font-size: 17px;
+  box-shadow: inset 0px 0px 0px -15px rebeccapurple;
+  transition: all 300ms ease-out;
+  text-transform: capitalize;
+}
+.btngroup__item:last-child {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.btngroup__item:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.btngroup__item:hover,
+.btngroup__item:focus {
+  color: rebeccapurple;
+  box-shadow: inset 0px -20px 0px -15px rebeccapurple;
+}
+.btngroup__item:focus {
+  outline: none;
+}
+.btngroup__item:after {
+  content: "✔️";
+  margin-left: 0.5rem;
+  display: inline-block;
+  color: rebeccapurple;
+  position: absolute;
+  transform: translatey(10px);
+  opacity: 0;
+  transition: all 200ms ease-out;
+}
+.btngroup__item--active:after {
+  opacity: 1;
+  transform: translatey(-2px);
+}
+@media (max-width: 936px) {
+ .btngroup{
+
+   background-color: transparent;
+   color: transparent;
+   
+ }
+ .btngroup__item{
+    font-size: 11.04px;
+   background-color: transparent;
+    padding: 5px;
+    margin: 0px;
+ }
+}
